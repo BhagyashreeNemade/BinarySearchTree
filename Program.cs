@@ -22,9 +22,19 @@
             binarySearch.Insert(16);
             binarySearch.Insert(63);
             binarySearch.Insert(67);
-            Console.WriteLine("InOrder Traversal For Given Is BST ");
+            Console.WriteLine("InOrder Traversal For Given Is BST \n");
             binarySearch.Display();
             binarySearch.GetSize();
+            int searchElement = 67;
+            if (binarySearch.IfExists(searchElement, binarySearch))
+            {
+                Console.WriteLine($"The given {searchElement} is Present in BST");
+            }
+            else
+            {
+                Console.WriteLine($"The given {searchElement} is Not Present in BST");
+            }
+         
         }
     }
 }
